@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+       <style>
+         body{
+            /* background-color: #55191b; */
+            font-size: 150%;
+            background-image: linear-gradient(150deg, #000000, rgb(43, 15, 133));
+            margin: 0%;
+            padding: 0%;
+
+
+
+        }
+
+        nav {
+            /* background-image: linear-gradient(to top left,white,gray); */
+            /* background-image: url('https://www.pexels.com/photo/variety-of-vegetables-616401/');
+            */
+
+            background-color: #ffff00;
+            background-size: cover;
+            /* text-shadow: 2px 0px 1px black; */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0%;
+            padding: 0%;
+
+
+
+
+        }
+
+        nav h1 {
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+
+        nav {
+            display: flex;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin-left: 5rem;
+            color: navy;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul a:hover{
+            background-color: navy;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        nav ul {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+
+        }
+        
+        .schedule div{
+            /* background-color:greenyellow; */
+            background-image: linear-gradient(45deg,lightgreen,yellow);
+            border-radius: 10px 20px;
+            width: 20rem;
+            height: 12rem;
+            margin-left: 1rem;
+            margin-top: 1rem;
+            padding: 0.1rem;
+            text-align: center;
+
+        }
+        .schedule div:hover{
+            background-image: linear-gradient(360deg,lightgreen,yellow);
+        }
+        .schedule div h4{
+            margin-top: 26px;
+        }
+        form{
+            color: #ffff00;
+        }
+        footer,
+        footer p{
+            background-color: #ffff00;
+            color: #663300;
+            padding: .8px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        .menu_heading {
+            background-color: #ffff00;
+            color: #663300;
+            padding: 10px;
+            width:fit-content;
+            text-align: center;
+            margin: 0% auto;
+            margin-top: 20px;
+           
+        }
+        .rate{
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .rate ul li{
+            list-style: none;
+            color: greenyellow;
+        }
+        .rate img{
+            width:10rem;
+            height: 4rem;
+        }
+        .comment{
+            /* text-align: center; */
+            color: white;
+            /* margin: 0% auto; */
+        }
+        .comment img{
+            width:4rem;
+            height: 4rem;
+            margin-right: 1rem;
+            border-radius: 100%;
+        }
+        /* input[type="submit"]{
+            margin-top: 1rem;
+        } */
+        @media(max-width:750px) {
+            
+            nav ul{
+                display: none;
+            }
+            .rate{
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: auto;
+        }
+        .rate ul{
+            margin-top:1rem;
+        }
+       
+
+        }
+       
+       </style>
+    </head>
+    <body>
+      
+        <nav> 
+            <h1><u>Moti Mahal Delux</u></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#menu">Food Menu</a></li>
+                <li><a href="book_table.html">Book Table</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    
+        <div class="container">
+            <div class="row my-5 schedule">
+                <div class="col-md-2 offset-md-4">
+                    <h4>Address:</h4>
+                    <p>A92 C Namberdar Estate Taimoor Nagar. New Friends colony . New Delhi 110065</p>
+                </div>
+                <div class="col-md-2">
+                    <h4>Phone No:</h4>
+                    <p>+91.9810029767 , +91.9311010879</p>
+                </div>
+                <div class="col-md-2">
+                    <h4>Email Id:</h4>
+                    <p>motimahal@gmail.com</p>
+        
+                </div>
+            </div>
+
+            <form action="">
+                <h2 class="menu_heading">Contact Form</h2>
+                <p>Feel Free to ask your doubt if you have doubt</p>
+                <div class="row my-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email">Email-id:</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row my-4">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+    
+             <input type="submit" value="Send" class="btn btn-light">
+                <input type="reset" value="Cancel" class="btn btn-light">
+        </form>
+
+        
+            <h2 class="menu_heading">Rating and Reviews</h2>
+            <div class="rate">
+                <ul>
+                    <li><img src="image/5_star.png" alt="5-Star">5 Star - 15 out 30</li>
+                    <li><img src="image/5_star.png" alt="">4 Star - 7 out 30</li>
+                    <li><img src="image/5_star.png" alt="">3 Star - 4 out 30</li>
+                    <li><img src="image/5_star.png" alt="">2 Star - 3 out 30</li>
+                    <li><img src="image/5_star.png" alt="">1 Star - 1 out 30</li>
+                </ul>
+          
+            <form action="">
+                
+                <div class="form-group my-md-5 my-3">
+
+                    <label for="rating">Give your Percious Rating to Us:</label>
+                   <select name="rating" id="rating" class="form-control" >
+                         
+                         <option value="">--- Rating ---</option>
+                         <option value="5">5 Star</option>
+                         <option value="4">4 Star</option>
+                         <option value="3">3 Star</option>
+                         <option value="2">2 Star</option>
+                         <option value="1">1 Star</option>
+                   </select>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <input type="text" name="comment" id="comment" class="form-control">
+                </div>
+                <div class="form-group">
+
+                <input type="submit" value="Submit" class="btn btn-warning">
+                </div>
+            </form>
+        </div>
+
+            <div class="comment">
+                <h2 class="menu_heading">Comments</h2>
+                <hr>
+                <h4><img src="image/mencloth2.jpeg" alt=""> AryanKumar_123</h4>
+                <p style="font-size:small;">10-July-2022 10:00 PM</p>
+                <p>Very Good Hotel</p>
+                <hr>
+                <h4><img src="image/mencloth2.jpeg" alt="">HarshitArora_69</h4>
+                <p style="font-size:small;">12-July-2022 7:00 PM</p>
+                <p>Jagah Nahi Milli</p>
+                <hr>
+                <h4><img src="image/mencloth2.jpeg" alt="">TusharGautam_420</h4>
+                <p style="font-size:small;">19-July-2022 11:00 PM</p>
+                <p>Are Bhai hai kya Hotel</p>
+                <hr>
+            </div>
+        </div>
+     
+       
+        
+        </div>
+
+        <footer>
+            <p>Moti Mahal Delux</p>
+            <p>Copyright &copy;2022,Pranav Malpani</p>
+        </footer>
+    </body>
+</html>

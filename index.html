@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        /* *{
+            box-sizing:content-box;
+            
+        } */
+        body {
+            background-color: #55191b;
+            font-size: 150%;
+            background-image: linear-gradient(150deg, #000000, rgb(43, 15, 133));
+            overflow-x: hidden;
+
+
+        }
+
+        nav {
+            /* background-image: linear-gradient(to top left,white,gray); */
+            /* background-image: url('https://www.pexels.com/photo/variety-of-vegetables-616401/');
+            */
+
+            background-color: #ffff00;
+            background-size: cover;
+            /* text-shadow: 2px 0px 1px black; */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0%;
+            padding: 0%;
+
+
+
+
+        }
+
+        nav h1 {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .head,
+        h1 {
+
+            text-align: center;
+        }
+
+        li {
+            color: #ffff00;
+        }
+
+        h3 {
+            background-color: #ffff00;
+            color: #663300;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            margin: 0% auto;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        footer,
+        footer p,
+        .header {
+            background-color: #ffff00;
+            color: #663300;
+            padding: .8px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 100px;
+        }
+
+        .logo {
+            margin-top: 25px;
+            margin-left: 5%;
+            width: 22rem;
+        }
+
+        .foodbanner {
+
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-left: 30px;
+            margin-top: 20px;
+
+        }
+
+        table,
+        td {
+            margin: 0% auto;
+            color: yellow;
+            border: 2px solid yellow;
+            padding: 1px;
+            width: 30rem;
+            text-align: center;
+
+        }
+
+        table {
+            margin-top: 20px;
+        }
+
+        td {
+            padding: 20px 10px;
+        }
+
+        th {
+            background-color: #ffff00;
+            color: #663300;
+
+        }
+
+        td:hover {
+            background-color: bisque;
+            color: navy;
+            font-weight: bold;
+
+        }
+
+
+
+
+
+        .grp_img {
+
+            text-align: center;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .grp_img img {
+            width: 25rem;
+            margin-top: 0.5rem;
+            height: 15rem;
+            opacity: 0.5;
+            border-radius: 20px 10px;
+            z-index: 0;
+        }
+
+        .grp_img img {
+            opacity: 0.5;
+        }
+
+        .grp_img div :hover {
+            opacity: 1;
+
+
+        }
+
+        .sale_img {
+            position: relative;
+            top: 10rem;
+            z-index: 1;
+        }
+
+        .block {
+            margin-top: 20px;
+        }
+
+        .menu_heading {
+            background-color: #ffff00;
+            color: #663300;
+            padding: 10px;
+            width: fit-content;
+            text-align: center;
+            margin: 0% auto;
+            margin-top: 20px;
+
+        }
+
+        .grp_img p {
+            margin: 0% auto;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            margin-left: 5rem;
+            color: navy;
+        }
+
+        ul {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+
+        }
+
+        .img_banner {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .img_banner img {
+            width: 25rem;
+            height: 20rem;
+            /* border-radius: 100%; */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul a:hover {
+            background-color: navy;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        @media(max-width:1173px) {
+            .grp_img img {
+                width: 22rem;
+                height: 13rem;
+            }
+        }
+
+        @media(max-width:1050px) {
+
+            .img_banner {
+                display: grid;
+                grid-template-columns: auto;
+            }
+
+            .grp_img {
+
+                text-align: center;
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+
+            .menu {
+                display: grid;
+                grid-template-columns: auto;
+                margin-left: 30px;
+                margin-top: 20px;
+
+            }
+
+        }
+
+        @media(max-width:750px) {
+
+            ul {
+                display: none;
+            }
+
+            .grp_img {
+
+                text-align: center;
+                display: grid;
+                grid-template-columns: auto;
+            }
+        }
+
+        @media(max-width:550px) {
+
+            .grp_img img {
+                width: 16rem;
+                margin-top: 0.5rem;
+                height: 13rem;
+                opacity: 0.5;
+                border-radius: 20px 10px;
+                z-index: 0;
+            }
+
+            table {
+                width: 20rem;
+            }
+
+            .img_banner img {
+                width: 12rem;
+                height: 10rem;
+                margin-top: 1rem;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+   
+    <nav>
+        <h1><u>Moti Mahal Delux</u></h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#menu">Food Menu</a></li>
+            <li><a href="book_table.html">Book Table</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <h2 class="menu_heading">About Moti Mahal Delux</h2>
+    <p style="color: yellow; margin-left:20px; margin-right:20px;">'Moti Mahal' was founded in Delhi in 1947. Moti Mahal
+        was the first to dig up a tandoor
+        right in the middle of its first small eatery and the legendary tandoori chicken was created. This was a raging
+        success and soon there was a demand for Tandoori Cuisine at social gatherings and wedding feasts where they
+        would use an improvised tandoor. This brought about a revolution in taste and a placed Moti Mahal on the
+        International Gourmet Map. Moti Mahal further went on to invent the Legendary Butter Chicken or Murg Makhani and
+        Dal Makhani. The Moti Mahal Restaurant, has contributed significantly to putting India on the food map of the
+        world.
+        <br><br>
+
+        Today, we have maintained a Classic Traditional Menu based on Traditional Recipes with an intrinsic
+        understanding of fine-tuning, tuned to the tastes of the 21st Century.
+    </p>
+    <div class="img_banner">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/31/29/1b/moti-mahal-delux.jpg" alt="">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.rJxbM2qAIC3bWw0uh_62NAHaGL&pid=Api&P=0&w=211&h=176" alt="">
+
+    </div>
+    <!-- <div class="foodbanner">
+        <img src="image/food-1.jpg" alt=""
+            width="300px" height="200px">
+        
+        <img src="image/food-2.jpg" alt=""
+            width="300px" height="200px">
+    </div> -->
+    <h2 class="menu_heading">Food Photo Gallery</h2>
+    <!-- <img src="image/sale.jpg" alt="" width="500px" height="150px" class="sale_img"> -->
+    <div class="grp_img">
+        <div>
+            <img src="image/food-9.png" alt="">
+            <p style="color: rgb(8, 2, 31); background-color: #fff; width: 20rem;">Food Item-1</p>
+        </div>
+        <div>
+            <img src="image/food-7.png" alt="">
+            <p style="color: rgb(8, 2, 31); background-color: #fff; width: 20rem;">Food Item-2</p>
+        </div>
+        <div>
+            <img src="image/food-3.png" alt="">
+            <p style="color: rgb(8, 2, 31); background-color: #fff; width: 20rem;">Food Item-3</p>
+        </div>
+        <div>
+            <img src="image/food-4.png" alt="">
+            <p style="color: rgb(8, 2, 31); background-color: #fff; width: 20rem;">Food Item-4</p>
+        </div>
+        <div>
+            <img src="image/food-5.png" alt="">
+            <p style="color: rgb(8, 2, 31); background-color: #fff; width: 20rem;">Food Item-5</p>
+        </div>
+        <div>
+            <img src="image/food-8.png" alt="">
+            <p style="color: rgb(8, 2, 31); background-color: #fff; width: 20rem;">Food Item-6</p>
+        </div>
+
+
+    </div>
+
+    <h1 class="menu_heading" id="menu">Menu</h1>
+    <div class="menu">
+
+
+        <div class="block">
+            <h3>DESSERTS</h3>
+            <table>
+                <tr>
+                    <th>Food Item</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Carrot Halwa</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Rice Pudding</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Gulab Jamun</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Ras Malai</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Ice cream</td>
+                    <td>Rs.80</td>
+                </tr>
+
+            </table>
+
+        </div>
+        <div class="block">
+            <h3>BEVERAGES</h3>
+            <table>
+                <tr>
+                    <th>Food Item</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Sweet Lassi</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Mango Lassi</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Milk Shake</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Chai</td>
+                    <td>Rs.10</td>
+                </tr>
+                <tr>
+                    <td>Coffee</td>
+                    <td>Rs.80</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="block">
+            <h3>DESSERTS</h3>
+            <table>
+                <tr>
+                    <th>Food Item</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Carrot Halwa</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Rice Pudding</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Gulab Jamun</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Ras Malai</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Ice cream</td>
+                    <td>Rs.80</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="block">
+            <h3>DESSERTS</h3>
+            <table>
+                <tr>
+                    <th>Food Item</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Carrot Halwa</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Rice Pudding</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Gulab Jamun</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Ras Malai</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>Ice cream</td>
+                    <td>Rs.80</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <footer>
+        <p>Moti Mahal Delux</p>
+        <p>Copyright &copy;2022,Pranav Malpani</p>
+    </footer>
+</body>
+
+</html>
